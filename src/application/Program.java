@@ -13,7 +13,7 @@ import chess.ChessPosition;
 
 public class Program {
 	
-	List<ChessPiece> captured = new ArrayList<>();
+	  static List<ChessPiece> captured = new ArrayList<>();
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -23,7 +23,7 @@ public class Program {
 		while (true) {
 			try {
 			UI.clearScreen();
-			UI.printMatch(chessMatch, captured););
+			UI.printMatch(chessMatch, captured);
 			System.out.println();
 			System.out.print("Source: ");
 			ChessPosition source = UI.readChessPosition(sc);
