@@ -20,7 +20,7 @@ public class Program {
 		Board board = new Board(8, 8);
 		ChessMatch chessMatch = new ChessMatch();
 		
-		while (true) {
+		while (!chessMatch.getCheckMate()) {
 			try {
 			UI.clearScreen();
 			UI.printMatch(chessMatch, captured);
@@ -50,6 +50,8 @@ public class Program {
 			}
 				
 			}
+		UI.clearScreen();
+		UI.printMatch(chessMatch, captured);
 		}
 	}
 
